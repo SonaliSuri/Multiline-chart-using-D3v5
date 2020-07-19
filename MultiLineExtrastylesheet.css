@@ -1,0 +1,33 @@
+/*
+The x axis will not be visible using the property display:none
+*/
+
+.axis--x path {
+  display: none;
+}
+
+/*
+If we don not set this propert, as we have used curvebasis to compute the curves, it will fill the underlying region with black color.
+*/
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+ 
+/*
+These are the css properties for the thin grid lines as required by in the 4th requirement of the assignment. The color of the grid line is set to lightgrey with other properties.
+*/
+
+.grid line {
+  stroke: lightgrey;
+  stroke-opacity: 0.7;
+  shape-rendering: crispEdges;
+}
+/*
+By default there is an outline for the grid container, setting the stroke-width to 0 disables it.
+*/
+.grid path {
+  stroke-width: 0;
+}
+
